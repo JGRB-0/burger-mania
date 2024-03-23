@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background-color: rgba(240, 248, 255, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 16px;
+}
+
+header .logo>img {
+    width: 60px;
+}
+
+header .menu {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+/* ----slider CSS---- */
+
+.slider {
+    height: 130vh;
+    margin-top: -50px;
+    position: relative;
+    background-image: url(imagens/fundo-popup-m.jpg);
+    background-image: linear-gradient(to top, black, rgba(255, 255, 255, transparent 100%));
+    background-size: 100vh;
+    text-align: center;
+}
+
+.slider .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
+}
+
+.slider .list .item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.slider .list .item>img {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50% -50%);
+    margin: auto;
+    width: 50%;
+    margin-top: -60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider .list .item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, #000 0%, transparent, transparent);
+}
+
+.slider .list .item .content {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    width: 250px;
+    max-width: 40%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.529);
+    color: black;
+    border-radius: 16px;
+    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.35));
+    z-index: 1;
+}
+
+.slider .list .item .ingredients {
+    text-align: center;
+    position: absolute;
+    right: 4%;
+    top: 30%;
+    width: 250px;
+    max-width: 40%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.529);
+    color: black;
+    border-radius: 16px;
+    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.35));
+    z-index: 1;
+}
+
+.slider .list .item .content>h2,
+.slider .list .item .ingredients>h2 {
+    font-family: "Alkatra", system-ui;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: bolder;
+    color: black;
+    margin: 0;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.slider .list .item.active p,
+.slider .list .item.active h2,
+.slider .list .item.active p {
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .4s .6s ease-in-out 1 forwards;
+}
+
+.slider .list .item.active h2 {
+    animation-delay: .8s;
+}
+
+.slider .list .item.active p {
+    animation-duration: 1s;
+}
+
+.arrows {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    z-index: 100;
+}
+
+.arrows button {
+    background-color: #f29422a8;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrows button:hover {
+    background-image: radial-gradient(#F29422, #8C4C14);
+    color: black;
+}
+
+.thumbnail {
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: -80px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: center;
+}
+
+.thumbnail::-webkit-scrollbar {
+    width: 0;
+}
+
+.thumbnail .item {
+    width: 100px;
+    height: 150px;
+    filter: brightness(.5);
+    transition: .5s;
+    cursor: pointer;
+    filter: brightness(.5);
+    flex-shrink: 0;
+}
+
+.thumbnail .item>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.thumbnail .item:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+.thumbnail .item:active {
+    transform: scale(.9);
+}
+
+.thumbnail .item .content {
+    position: absolute;
+    inset: auto auto 10px auto;
+    font-family: Poppins;
+    font-size: small;
+    background-color: #0000008d;
+    width: 100%;
+}
+
+@media screen and (max-width: 678px) {
+
+    .header .menu > li{
+        font-size: smaller;
+    }
+
+    .slider {
+        height: 107vh;
+    }
+
+    .slider .list .item .content>h2,
+    .slider .list .item .ingredients>h2 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .slider .list .item .content>p,
+    .slider .list .item .ingredients>p {
+        font-size: smaller;
+    }
+
+    .slider .list .item .content,
+    .slider .list .item .ingredients {
+        position: absolute;
+        margin-top: 47px;
+        padding: 10px;
+        height: 235px;
+    }
+
+    .slider .list .item.active>img {
+        display: block;
+        position: absolute;
+        top: 17%;
+    }
+
+    .arrows{
+        top: 23.5%;
+        right: 1%;
+    }
+
+    .thumbnail {
+        justify-content: start;
+    }
+
+
+}
