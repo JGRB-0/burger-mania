@@ -42,14 +42,14 @@ header .menu {
     font-weight: 500;
 }
 
-header .menu a {
+header a {
     color: white;
     text-decoration: none;
     padding: 3px;
     position: relative;
 }
 
-header .menu a::after {
+header a::after {
     content: ' ';
     width: 0%;
     height: 3px;
@@ -61,7 +61,7 @@ header .menu a::after {
     z-index: 1;
 }
 
-header .menu a:hover::after {
+header a:hover::after {
     width: 105%;
 }
 
