@@ -52,7 +52,7 @@ header .menu a {
 header .menu a::after {
     content: ' ';
     width: 0%;
-    height: 5px;
+    height: 3px;
     background-image: linear-gradient(to right, #F29422, #8C4C14);
     position: absolute;
     bottom: 0;
