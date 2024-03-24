@@ -51,6 +51,7 @@ header .menu {
     background-image: url(imagens/fundo-popup-m.jpg);
     background-image: linear-gradient(to top, black, rgba(255, 255, 255, transparent 100%));
     background-size: 100vh;
+    background-position: center;
     text-align: center;
 }
 
