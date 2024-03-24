@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: black;
     color: white;
 }
@@ -76,7 +77,7 @@ header .menu {
     width: 50%;
     margin-top: -60px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .slider .list .item::after {
@@ -89,43 +90,112 @@ header .menu {
     background-image: linear-gradient(to top, #000 0%, transparent, transparent);
 }
 
-.slider .list .item .content {
+.slider .list .item .box1 {
     position: absolute;
-    left: 4%;
-    top: 30%;
-    width: 250px;
-    max-width: 40%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.529);
-    color: black;
-    border-radius: 16px;
-    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.35));
+    width: 200px;
+    min-height: 300px;
+    background: rgba(0, 0, 0, .75);
+    border-radius: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 32%;
+    left: 7%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slider .list .item .box1::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    background-image: conic-gradient(transparent, transparent, transparent, #F29422 95%);
+    animation: animate 4s linear infinite;
+}
+
+.slider .list .item .box1::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #F29422 95%);
+    transform: rotate(180deg);
+}
+
+.slider .list .item .box1 .content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding: 5px;
+    inset: 5px;
+    background: url(imagens/fundo-box.jpg);
+    color: #000;
+    border-radius: 0 16px;
     z-index: 1;
 }
 
-.slider .list .item .ingredients {
-    text-align: center;
+.slider .list .item .box2 {
     position: absolute;
-    right: 4%;
-    top: 30%;
-    width: 250px;
-    max-width: 40%;
+    width: 200px;
+    min-height: 300px;
+    background: rgba(0, 0, 0, .75);
+    border-radius: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 32%;
+    right: 7%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slider .list .item .box2::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #F29422 95%);
+    transform: rotate(180deg);
+}
+
+.slider .list .item .box2::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #F29422 95%);
+    transform: rotate(0deg);
+}
+
+.slider .list .item .box2 .content {
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.529);
-    color: black;
-    border-radius: 16px;
-    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.35));
+    padding: 0;
+    position: absolute;
+    padding: 5px;
+    inset: 5px;
+    background: url(imagens/fundo-box.jpg);
+    color: #000;
+    border-radius: 0 16px;
     z-index: 1;
 }
 
 .slider .list .item .content>h2,
 .slider .list .item .ingredients>h2 {
     font-family: "Alkatra", system-ui;
-    font-size: 35px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
     font-weight: bolder;
     color: black;
     margin: 0;
+}
+
+.slider .list .item .box1 .content p,
+.slider .list .item .box2 .content p{
+    font-weight: bold;
 }
 
 @keyframes showContent {
@@ -153,10 +223,17 @@ header .menu {
     animation-duration: 1s;
 }
 
-.arrows {
+.arrows .prev {
     position: absolute;
     top: 20%;
-    right: 3%;
+    left: 10%;
+    z-index: 100;
+}
+
+.arrows .next {
+    position: absolute;
+    top: 20%;
+    right: 10%;
     z-index: 100;
 }
 
@@ -234,31 +311,12 @@ header .menu {
 
 @media screen and (max-width: 678px) {
 
-    .header .menu > li{
+    .header .menu>li {
         font-size: smaller;
     }
 
     .slider {
-        height: 107vh;
-    }
-
-    .slider .list .item .content>h2,
-    .slider .list .item .ingredients>h2 {
-        font-size: 25px;
-        padding: 0;
-    }
-
-    .slider .list .item .content>p,
-    .slider .list .item .ingredients>p {
-        font-size: smaller;
-    }
-
-    .slider .list .item .content,
-    .slider .list .item .ingredients {
-        position: absolute;
-        margin-top: 47px;
-        padding: 10px;
-        height: 235px;
+        height: 110vh;
     }
 
     .slider .list .item.active>img {
@@ -267,7 +325,26 @@ header .menu {
         top: 17%;
     }
 
-    .arrows{
+    .slider .list .item .box1,
+    .slider .list .item .box2 {
+        width: 170px;
+        min-height: 270px;
+        font-size: 0.9em;
+        margin-top: 30px;
+    }
+
+    .slider .list .item .box1 .content h2,
+    .slider .list .item .box2 .content h2 {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .slider .list .item .box1 .content p,
+    .slider .list .item .box2 .content p {
+        font-size: 0.95em;
+    }
+
+    .arrows {
         top: 23.5%;
         right: 1%;
     }
