@@ -100,7 +100,7 @@ header .menu {
     justify-content: center;
     align-items: center;
     top: 32%;
-    left: 7%;
+    left: 5%;
     overflow: hidden;
     z-index: 2;
 }
@@ -145,7 +145,7 @@ header .menu {
     justify-content: center;
     align-items: center;
     top: 32%;
-    right: 7%;
+    right: 4.5%;
     overflow: hidden;
     z-index: 2;
 }
@@ -194,7 +194,7 @@ header .menu {
 }
 
 .slider .list .item .box1 .content p,
-.slider .list .item .box2 .content p{
+.slider .list .item .box2 .content p {
     font-weight: bold;
 }
 
