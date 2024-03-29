@@ -6,6 +6,12 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 
 let clicado = false
 
+let home = document.querySelector('.menu .home-button');
+let about = document.querySelector('.menu .about-us-button');
+let cardapio = document.querySelector('.menu .cardapio-button');
+
+let width = window.screen.width;
+
 // Configurações iniciais
 let countItem = items.length;
 let itemActive = 0;
@@ -28,10 +34,10 @@ prev.onclick = function () {
     showSlider();
 }
 
-let refreshInterval = setInterval(() =>{
-    if(clicado == false)
+let refreshInterval = setInterval(() => {
+    if (clicado == false)
         next.click();
-}, 5000)
+}, 10000)
 // Função para exibir o slide ativo
 function showSlider() {
     // Remover a classe 'active' de todos os itens e miniaturas
@@ -52,4 +58,30 @@ thumbnails.forEach((thumbnail, index) => {
         showSlider();
     })
 })
+
+if (width < 768) {
+
+    home.onclick = function () {
+        window.scrollTo(0, 0)
+    }
+    about.onclick = function () {
+        window.scrollTo(0, 870)
+    }
+    cardapio.onclick = function () {
+        window.scrollTo(0, 3420)
+    }
+}
+else {
+
+    home.onclick = function () {
+        window.scrollTo(0, 0)
+    }
+    about.onclick = function () {
+        window.scrollTo(0, 1000)
+    }
+    cardapio.onclick = function () {
+        window.scrollTo(0, 1700)
+    }
+
+}
 

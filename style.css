@@ -18,12 +18,17 @@
     font-style: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -56,14 +61,19 @@ header .menu {
     font-weight: 500;
 }
 
+header button,
 header a {
+    background-color: transparent;
+    border: none;
     color: white;
     text-decoration: none;
     padding: 5px;
     position: relative;
+    cursor: pointer;
     font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+header button::after,
 header a::after {
     content: '';
     position: absolute;
@@ -75,6 +85,7 @@ header a::after {
     transition: all 0.4s ease-in-out;
 }
 
+header button:hover::after,
 header a:hover::after {
     width: 100%;
 }
@@ -696,7 +707,7 @@ i {
 .footer .funcionamento>p {
     text-decoration: underline;
     font-size: 1em;
-    
+
 }
 
 .footer .contato {
