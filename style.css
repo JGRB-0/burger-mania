@@ -912,6 +912,10 @@ i {
         background-size: 120%;
     }
 
+    .about .historia p{
+        columns: 1;
+    }
+
     .cardapio {
         justify-content: start;
     }
