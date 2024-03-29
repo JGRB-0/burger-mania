@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -673,19 +673,23 @@ i {
     color: red;
 }
 
-.footer .navegacao a {
+.footer .navegacao button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
     font-family: poppins;
     text-decoration: none;
     color: white;
     padding: 10px;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.footer .navegacao a:hover {
+.footer .navegacao button:hover {
     background-image: linear-gradient(to right, #F29422, #8C4C14);
     color: #000;
-    font-size: 0.9em;
+    transform: scale(.9);
 }
 
 .footer .funcionamento {
@@ -696,6 +700,7 @@ i {
     grid-column: 3;
     grid-row: 1;
     bottom: 0;
+    margin-top: 50px;
 }
 
 .footer .funcionamento .horarios p {
@@ -921,7 +926,7 @@ i {
 
     .footer {
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 150px 200px 150px;
+        grid-template-rows: 150px 150px 200px 200px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -959,7 +964,7 @@ i {
         position: relative;
         left: -100%;
         bottom: 0;
-        width: 259%;
+        width: 265%;
         height: 3px;
         background-image: linear-gradient(to right, #F29422, #8C4C14);
     }

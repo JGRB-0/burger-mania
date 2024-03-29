@@ -10,6 +10,10 @@ let home = document.querySelector('.menu .home-button');
 let about = document.querySelector('.menu .about-us-button');
 let cardapio = document.querySelector('.menu .cardapio-button');
 
+let homeFooter = document.querySelector('.footer .navegacao .footer-home-button');
+let aboutFooter = document.querySelector('.footer .navegacao .footer-about-us-button');
+let cardapioFooter = document.querySelector('.footer .navegacao .footer-cardapio-button');
+
 let width = window.screen.width;
 
 // Configurações iniciais
@@ -70,6 +74,16 @@ if (width < 768) {
     cardapio.onclick = function () {
         window.scrollTo(0, 3420)
     }
+
+    homeFooter.onclick = function () {
+        window.scrollTo(0, 0)
+    }
+    aboutFooter.onclick = function () {
+        window.scrollTo(0, 870)
+    }
+    cardapioFooter.onclick = function () {
+        window.scrollTo(0, 3420)
+    }
 }
 else {
 
@@ -80,6 +94,16 @@ else {
         window.scrollTo(0, 1000)
     }
     cardapio.onclick = function () {
+        window.scrollTo(0, 1700)
+    }
+
+    homeFooter.onclick = function () {
+        window.scrollTo(0, 0)
+    }
+    aboutFooter.onclick = function () {
+        window.scrollTo(0, 1000)
+    }
+    cardapioFooter.onclick = function () {
         window.scrollTo(0, 1700)
     }
 
