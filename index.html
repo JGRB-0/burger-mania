@@ -11,124 +11,410 @@
     <header>
         <div class="logo"><img src="imagens/logo.png" alt="Burger Mania"></div>
         <ul class="menu">
-            <li>Home</li>
-            <li>Quem Somos?</li>
-            <li>Fazer Pedido</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quem Somos?</a></li>
+            <li><a href="#">Cardápio</a></li>
         </ul>
         <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="https://pedido.anota.ai/loja/burger-mania-4?from=menu-share-adm&utm_source=portal-share-btn&referer=https%3A%2F%2Fl.instagram.com%2F" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
-<!-- Slides -->
-    <div class="slider">
-        <!-- Lista de slides -->
-        <div class="list">
-            <div class="item active">
-                <img src="lanches/alabama.jpg" alt="Foto do Alabama">
-                <div class="content">
-                    <h2>Alabama</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt est tenetur saepe iure? Libero autem dolores reprehenderit quis doloremque quasi repellendus temporibus eos quas omnis, officiis sed placeat soluta aliquam.</p>
+
+    <div class="main">
+        <div class="slider">
+            <!-- Lista de slides -->
+            <div class="list">
+                <div class="item active">
+                    <img src="lanches/alabama.jpg" alt="Foto do Alabama">
+                    <div class="box1">
+                        <div class="content">
+                            <h2>Alabama</h2>
+                            <p>Desfrute do autêntico sabor do sul dos Estados Unidos com o irresistível lanche Alabama. Cada mordida é uma explosão de sabores inesquecível. Experimente agora e deixe-se levar por uma explosão de sabores incríveis!</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="content" id="alabama">
+                            <h2>Ingredientes:</h2>
+                            <p>"Pão Australiano"</p>
+                            <p>"Blend bovino 150g"</p>
+                            <p>"Cheddar"</p>
+                            <p>"Pepperoni"</p>
+                            <p>"Rúcula"</p>
+                            <p>"Tomate"</p>
+                            <p>"Cebola Roxa"</p>
+                            <p>"Molho chipotle defumado c/ mel"</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="ingredients">
-                    <h2>Ingredientes</h2>
-                    <p>Ingrediente 1</p>
-                    <p>Ingrediente 2</p>
-                    <p>Ingrediente 3</p>
-                    <p>Ingrediente 4</p>
-                    <p>Ingrediente 5</p>
+                <div class="item">
+                    <img src="lanches/nordestino.jpg" alt="Foto do Nordestino">
+                    <div class="box1">
+                        <div class="content">
+                            <h2>Nordestino</h2>
+                            <p>Descubra o autêntico sabor do Nordeste em cada mordida com o nosso lanche Nordestino! Este lanche é uma verdadeira explosão de sabores nordestinos. Experimente agora e deixe-se levar por uma experiência gastronômica única e inesquecível!</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="content" id="nordestino">
+                            <h2>Ingredientes:</h2>
+                            <p>"Pão Brioche"</p>
+                            <p>"Blend bovino 150g"</p>
+                            <p>"Quejo Coalho"</p>
+                            <p>"Couve crispy"</p>
+                            <p>"Farofa de carne seca"</p>
+                            <p>"Mostarda c/ mel"</p>
+                            <p>"Molho B.M"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="lanches/trem-de-minas.png" alt="Foto do Trem de Minas">
+                    <div class="box1">
+                        <div class="content">
+                            <h2 style="font-size: 1.55em;">Trem de Minas</h2>
+                            <p>Embarque em uma viagem de sabores com o nosso lanche Trem de Minas! Este lanche é uma verdadeira explosão de sabores mineiros. Experimente agora e deixe-se levar por uma experiência gastronômica única e inesquecível!</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="content" id="trem">
+                            <h2 style="font-size: 1.55em;">Ingredientes:</h2>
+                            <p>"Pão Brioche"</p>
+                            <p>"3 Blend bovino 150g cada"</p>
+                            <p>"Queijo prato"</p>
+                            <p>"Onion rings"</p>
+                            <p>"Bacon em tiras"</p>
+                            <p>"Cheddar cremoso"</p>
+                            <p>"Molho barbecue"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="lanches/jack.jpg" alt="Foto do Mr. Jack">
+                    <div class="box1">
+                        <div class="content">
+                            <h2>Mr. Jack</h2>
+                            <p>Conheça o Mr. Jack, o lanche que vai conquistar o seu paladar!  Cada mordida é uma experiência única e cheia de sabor. Descubra o sabor autêntico e inconfundível do Mr. Jack hoje mesmo!</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="content" id="jack">
+                            <h2>Ingredientes:</h2>
+                            <p>"Pão brioche"</p>
+                            <p>"Blend bovino 150g"</p>
+                            <p>"Cebola caramelizada no 'Jack Daniels'"</p>
+                            <p>Onion rings</p>
+                            <p>Molho B.M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="lanches/monster.jpg" alt="Foto do Monster">
+                    <div class="box1">
+                        <div class="content">
+                            <h2>Mr. Monster</h2>
+                            <p>Conheça o Mr. Monster, o lanche que vai te surpreender em cada mordida! Essa combinação única de sabores vai te deixar com água na boca. Experimente o Mr. Monster e descubra uma explosão de sabor em cada bite!</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="content" id="monster">
+                            <h2>Ingredientes:</h2>
+                            <p>Pão Brioche</p>
+                            <p>2 Blend bovino 150g cada</p>
+                            <p>Cream cheese</p>
+                            <p>Omelete de calabresa e bacon</p>
+                            <p>Cebola roxa</p>
+                            <p>Toque especial de alho frio</p>
+                            <p>Molho B.M</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="lanches/nordestino.jpg" alt="Foto do Nordestino">
-                <div class="content">
-                    <h2>Nordestino</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt est tenetur saepe iure? Libero autem dolores reprehenderit quis doloremque quasi repellendus temporibus eos quas omnis, officiis sed placeat soluta aliquam.</p>
-                </div>
-                <div class="ingredients">
-                    <h2>Ingredientes:</h2>
-                    <p>Ingrediente 1</p>
-                    <p>Ingrediente 2</p>
-                    <p>Ingrediente 3</p>
-                    <p>Ingrediente 4</p>
-                    <p>Ingrediente 5</p>
-                </div>
+            <!-- Buttons arrows -->
+            <div class="arrows">
+                <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="next"><i class="fa-solid fa-angle-right"></i></button>
             </div>
-            <div class="item">
-                <img src="lanches/trem-de-minas.png" alt="Foto do Trem de Minas">
-                <div class="content">
-                    <h2>Trem de Minas</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt est tenetur saepe iure? Libero autem dolores reprehenderit quis doloremque quasi repellendus temporibus eos quas omnis, officiis sed placeat soluta aliquam.</p>
+            <!-- Thumbnails -->
+            <div class="thumbnail">
+                <div class="item active">
+                    <img src="lanches/alabama.jpg" alt="Prévia Alabama">
+                    <div class="content">Alabama</div>
                 </div>
-                <div class="ingredients">
-                    <h2>Ingredientes:</h2>
-                    <p>Ingrediente 1</p>
-                    <p>Ingrediente 2</p>
-                    <p>Ingrediente 3</p>
-                    <p>Ingrediente 4</p>
-                    <p>Ingrediente 5</p>
+                <div class="item">
+                    <img src="lanches/nordestino.jpg" alt=" Prévia Nordestino">
+                    <div class="content">Nordestino</div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="lanches/jack.jpg" alt="Foto do Mr. Jack">
-                <div class="content">
-                    <h2>Mr. Jack</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt est tenetur saepe iure? Libero autem dolores reprehenderit quis doloremque quasi repellendus temporibus eos quas omnis, officiis sed placeat soluta aliquam.</p>
+                <div class="item">
+                    <img src="lanches/trem-de-minas.png" alt=" Prévia Trem de Minas">
+                    <div class="content">Trem de Minas</div>
                 </div>
-                <div class="ingredients">
-                    <h2>Ingredientes:</h2>
-                    <p>Ingrediente 1</p>
-                    <p>Ingrediente 2</p>
-                    <p>Ingrediente 3</p>
-                    <p>Ingrediente 4</p>
-                    <p>Ingrediente 5</p>
+                <div class="item">
+                    <img src="lanches/jack.jpg" alt=" Prévia Jack">
+                    <div class="content"> Mr. Jack</div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="lanches/monster.jpg" alt="Foto do Monster">
-                <div class="content">
-                    <h2>Mr. Monster</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt est tenetur saepe iure? Libero autem dolores reprehenderit quis doloremque quasi repellendus temporibus eos quas omnis, officiis sed placeat soluta aliquam.</p>
-                </div>
-                <div class="ingredients">
-                    <h2>Ingredientes:</h2>
-                    <p>Ingrediente 1</p>
-                    <p>Ingrediente 2</p>
-                    <p>Ingrediente 3</p>
-                    <p>Ingrediente 4</p>
-                    <p>Ingrediente 5</p>
+                <div class="item">
+                    <img src="lanches/monster.jpg" alt=" Prévia Monster">
+                    <div class="content"> Mr. Monster</div>
                 </div>
             </div>
         </div>
-        <!-- Buttons arrows -->
-        <div class="arrows">
-            <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
-            <button class="next"><i class="fa-solid fa-angle-right"></i></button>
-        </div>
-        <!-- Thumbnails -->
-        <div class="thumbnail">
-            <div class="item active"> 
-                <img src="lanches/alabama.jpg" alt="Prévia Alabama">
-                <div class="content">Alabama</div>
-            </div>
-            <div class="item"> 
-                <img src="lanches/nordestino.jpg" alt=" Prévia Nordestino">
-                <div class="content">Nordestino</div>
-            </div>
-            <div class="item"> 
-                <img src="lanches/trem-de-minas.png" alt=" Prévia Trem de Minas">
-                <div class="content">Trem de Minas</div>
-            </div>
-            <div class="item"> 
-                <img src="lanches/jack.jpg" alt=" Prévia Jack">
-                <div class="content"> Mr. Jack</div>
-            </div>
-            <div class="item"> 
-                <img src="lanches/monster.jpg" alt=" Prévia Monster">
-                <div class="content"> Mr. Monster</div>
-            </div>
-        </div>
+        <div class="about">
+            <div class="historia">
+                <h1>Sobre nós</h1>
+                <h2>Bem-vindo à Burger Mania: Uma Jornada de Sabores Autênticos</h2>
+                <p>
+                    Há mais de uma década, a Burger Mania tem sido um ícone na cena gastronômica brasileira, pioneira e líder no movimento das hamburguerias artesanais. Nossa jornada começou com uma paixão compartilhada por hambúrgueres autênticos e um compromisso inabalável com a qualidade e a criatividade culinária. Hoje, somos reconhecidos como uma referência em sabor e inovação, com mais de 15 lanches autorais que desafiam os limites do paladar.
         
+                    Quando você experimenta um dos nossos hambúrgueres, está saboreando a visão e a expertise do nosso chef mestre, Flavio Puebla. Cada lanche é uma obra de arte gastronômica, cuidadosamente elaborada com ingredientes frescos e selecionados para oferecer uma explosão de sabores em cada mordida. Dos clássicos brasileiros às criações exclusivas da Burger Mania, cada opção é uma experiência única e deliciosa.
+        
+                    Além do reconhecimento dos nossos clientes fiéis e entusiastas da gastronomia, continuamos empenhados em elevar os padrões de excelência em cada prato que servimos. Acreditamos que a paixão pela comida de qualidade deve ser compartilhada, e é por isso que continuamos aprimorando nossas receitas, buscando novas inspirações e mantendo a Burger Mania como referência em hambúrgueres artesanais.
+        
+                    Por trás da administração dedicada e do sucesso contínuo da Burger Mania está Ana Paula Baldoni, nossa mentora e líder, que traz não apenas visão estratégica, mas também o caloroso toque familiar que torna cada visita à nossa hamburgueria uma experiência acolhedora e memorável.
+        
+                    Seja você um amante de hambúrgueres clássicos ou um explorador de novos sabores, convidamos você a se juntar a nós nesta jornada de descoberta culinária na Burger Mania. Estamos aqui para transformar cada refeição em uma celebração de sabores autênticos e momentos inesquecíveis. Venha nos visitar e descubra o que torna a Burger Mania uma referência em hambúrgueres artesanais no Brasil!</p>
+            </div>
+        </div>
+        <div class="cardapio-titulo">
+            <h1>Cardápio</h1>
+            <h2>Role para o lado para ver mais opções!</h2>
+            <div class="cardapio">
+                <div class="cardapio-digital">
+                    <div class="lanche-slider">
+                        <h1>Slider</h1>
+                        <div class="item">
+                            <h2>Chicago</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 50g, Queijo Prato, Picles e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Boston</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 50g, queijo prato, alface americana, tomate, picles, cebola roxa e molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Vegas</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 50g, queijo prato, bacon, cebola caramelizada, e molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Atlanta</h2>
+                            <div class="ingredientes">
+                                <p>Pão, hamburguer 50g, queijo prato, Catupiry, tomate e molho BM</p>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <div class="lanche-classico">
+                        <h1>Clássicos</h1>
+                        <div class="item">
+                            <h2>X-Burger</h2>
+                            <div class="ingredientes">
+                                <p>Pão, hamburguer 100g, queijo prato, e molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burger Salada</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, Queijo Prato, alface, tomate, cebola roxa e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burger Cheddar</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, Cheddar e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burger Requeijão</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, Requeijão e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burger Bacon</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, Queijo Prato, Bacon e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burger calabresa</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, Queijo Prato, Calabresa e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burger Big Salada Mania Especial</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, alface, tomate, cebola roxa, milho, ervilha, abacaxi grelhado e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>X-Burgão</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, ovo, bacon, calabresa, alface, tomate, cebola roxa e Molho BM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lanche-premium">
+                        <h1>PREMIUM</h1>
+                        <div class="item">
+                            <h2>Vegetariano</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Hamburguer mix de legumes, cream cheese, tomate confit, rúcula, tomate e cebola roxa</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Chicken Supreme</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Hamburguer de frango empanado, cream cheese, tomate confit, rúcula, cebola roxa, tomate e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Gorgonzola</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Blend Bovino 150g, creme de gorgonzola, bacon, cebola roxa, rúcula, tomate e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Jimi Hendrix</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Hamburguer suino de copa lombo 150g, Queijo prato, bacon, molho classico e barbecue, onion rings, e geleia de pimenta artesanal</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Marechal Burger</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Blend bovino 150g, queijo minas, banana empanada, mel, rúcula, cebola roxa, tomate e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Puebla's</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, blend bovino 150g, catupiry, bacon, agrião, tomate confit, filetes de manga, cebola roxa e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Mr. Ribs <i class="fa-solid fa-pepper-hot"></i></h2>
+                            <div class="ingredientes">
+                                <p>Pão australiano, Blend bovino 150g, bacon, molho barbecue, cebola roxa e Molho BM apimentado</p>
+                                <p>queijo opcionl: </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Mr. Jack</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, blend bovino 150g, queijo gouda, cebola caramelizada no jack daniels, onion rings e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Tenensse <i class="fa-solid fa-pepper-hot"></i></h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Hamburguer suino de copa de lombo 150g, queijo prato, bacon, sour cream, coleslaw, abacaxi e pimenta jalapenho</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Mr. Pig <i class="fa-solid fa-pepper-hot"></i></h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, Hamburguer suino de copa de lombo 150g, cheddar cremoso, bacon, cebola caramelizada e Molho especial apimentado</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Mick Jagger</h2>
+                            <div class="ingredientes">
+                                <p>Pão, Hamburguer 100g, alface, tomate, cebola roxa, milho, ervilha, abacaxi grelhado e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Nordestino</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, blend bovino 150g, queijo coalho, couve crispy, farofa de carne seca, mostarda com mel e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Alabama</h2>
+                            <div class="ingredientes">
+                                <p>Pão australiano, blend bovino 150g, cheddar, pepperoni, rúcula, tomate, cebola roxa, e Molho  chipotle defumado com mel</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Classic</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, blend bovino 150g, Catupiry empanado, rúcula, tomate, cebola roxa, e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Mr. Monster</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, 2 blend bovino 150g cada, cream cheese, omelete de calabresa e bacon, cebola roxa, toque especial de alho frito e Molho BM</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>Trem de minas</h2>
+                            <div class="ingredientes">
+                                <p>Pão brioche, 3 blend bovino 150g cada, queijo prato, onion rings, bacon em tiras, cheddar cremoso e molho barbecue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comprar">
+                <a href="https://pedido.anota.ai/loja/burger-mania-4?from=menu-share-adm&utm_source=portal-share-btn&referer=https%3A%2F%2Fl.instagram.com%2F" target="_blank">Fazer Pedido!</a>
+            </div>
+        </div>
     </div>
+
+    <div class="footer">
+        <div class="logo"><img src="imagens/logo.png" alt="Logo Burger Mania">
+        </div>
+        <div class="navegacao">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Quem somos?</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Cardápio</a></li>
+            </ul>
+        </div>
+        <div class="funcionamento">
+            <p>Horario de Funcionamento:</p>
+            <div class="horarios">
+                <div class="item">
+                    <h2>De Quarta à Sábado:</h2>
+                    <p>de 18:30 às 00:00</p>
+                </div>
+                <div class="item">
+                    <h2>Domingo:</h2>
+                    <p>de 18:30 às 00:00</p>
+                </div>
+                
+            </div>
+        </div>
+        <ul class="contato">
+            <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><a href="https://www.facebook.com/burgermaniaaoriginal/?locale=pt_BR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+            </li>
+            <li class="icon instagram">
+                <span class="tooltip">@burgermaniaoficial</span>
+                <span><a href="https://www.instagram.com/burgermaniaoficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+            </li>
+            <li class="icon whatsapp">
+                <span class="tooltip">Whatsapp</span>
+                <span><a href="https://wa.me/message/6SBEPRUGASXUM1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></span>
+            </li>
+            <li class="icon local">
+                <span class="tooltip">Localização</span>
+                <span><a href="https://www.google.com.br/maps/place/Burger+Mania/@-23.2185948,-45.8893407,17z/data=!3m1!4b1!4m6!3m5!1s0x94cba2438a5e10cb:0x50a858aa1f77b75f!8m2!3d-23.2185948!4d-45.8867604!16s%2Fg%2F11bcd_l6l2?hl=pt-BR&entry=ttu" target="_blank"><i class="fa-solid fa-earth-americas"></i></a></span>
+            </li>
+        </ul>
+            
+
+    </div>
+        
+    
+
+    
 
     <script src="app.js"></script>
     
