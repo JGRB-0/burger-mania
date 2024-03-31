@@ -16,6 +16,10 @@ let cardapioFooter = document.querySelector('.footer .navegacao .footer-cardapio
 
 let width = window.screen.width;
 
+let imagem = document.querySelector('.about .imagens .box-imagens');
+let nextImageButton1 = document.querySelector('.about .imagens .box-imagens .flavio-e-ana-paula .next-image-button1');
+let nextImageButton2 = document.querySelector('.about .imagens .box-imagens .flavio-e-ana-paula .next-image-button2');
+
 // Configurações iniciais
 let countItem = items.length;
 let itemActive = 0;
@@ -70,7 +74,7 @@ const scrollToAbout = () => {
     window.scrollTo(0, width < 768 ? 870 : 1000);
 };
 const scrollToMenu = () => {
-    window.scrollTo(0, width < 768 ? 3420 : 1700);
+    window.scrollTo(0, width < 768 ? 4320 : 2600);
 };
 
 home.onclick = scrollToTop;
@@ -81,4 +85,13 @@ homeFooter.onclick = scrollToTop;
 aboutFooter.onclick = scrollToAbout;
 cardapioFooter.onclick = scrollToMenu;
 
+const scrollToNext1 = () => {
+    imagem.scrollTo(350, 0);
+}
 
+const scrollToNext2 = () => {
+    imagem.scrollTo(700, 0);
+}
+
+nextImageButton1.onclick = scrollToNext1;
+nextImageButton2.onclick = scrollToNext2;
