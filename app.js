@@ -63,49 +63,22 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
-if (width < 768) {
+const scrollToTop = () => {
+    window.scrollTo(0, 0);
+};
+const scrollToAbout = () => {
+    window.scrollTo(0, width < 768 ? 870 : 1000);
+};
+const scrollToMenu = () => {
+    window.scrollTo(0, width < 768 ? 3420 : 1700);
+};
 
-    home.onclick = function () {
-        window.scrollTo(0, 0)
-    }
-    about.onclick = function () {
-        window.scrollTo(0, 870)
-    }
-    cardapio.onclick = function () {
-        window.scrollTo(0, 3420)
-    }
+home.onclick = scrollToTop;
+about.onclick = scrollToAbout;
+cardapio.onclick = scrollToMenu;
 
-    homeFooter.onclick = function () {
-        window.scrollTo(0, 0)
-    }
-    aboutFooter.onclick = function () {
-        window.scrollTo(0, 870)
-    }
-    cardapioFooter.onclick = function () {
-        window.scrollTo(0, 3420)
-    }
-}
-else {
+homeFooter.onclick = scrollToTop;
+aboutFooter.onclick = scrollToAbout;
+cardapioFooter.onclick = scrollToMenu;
 
-    home.onclick = function () {
-        window.scrollTo(0, 0)
-    }
-    about.onclick = function () {
-        window.scrollTo(0, 1000)
-    }
-    cardapio.onclick = function () {
-        window.scrollTo(0, 1700)
-    }
-
-    homeFooter.onclick = function () {
-        window.scrollTo(0, 0)
-    }
-    aboutFooter.onclick = function () {
-        window.scrollTo(0, 1000)
-    }
-    cardapioFooter.onclick = function () {
-        window.scrollTo(0, 1700)
-    }
-
-}
 
