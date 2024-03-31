@@ -1001,6 +1001,10 @@ i {
         background-size: 120%;
     }
 
+    .about .historia p{
+        columns: 1;
+    }
+
     .about .imagens .box-imagens .flavio-e-ana-paula {
         max-width: 90%;
     }
