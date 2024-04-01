@@ -965,14 +965,14 @@ i {
     .slider .list .item .box1,
     .slider .list .item .box2 {
         width: 170px;
-        min-height: 290px;
+        min-height: 300px;
         font-size: 0.9em;
         margin-top: 35px;
     }
 
     .slider .list .item .box1 .content p {
-        padding: 0;
-        margin: 0;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .slider .list .item .box1 .content h2,
@@ -983,7 +983,7 @@ i {
 
     .slider .list .item .box1 .content p,
     .slider .list .item .box2 .content p {
-        font-size: 0.95em;
+        font-size: 0.9em;
 
     }
 
