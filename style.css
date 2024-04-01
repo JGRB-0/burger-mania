@@ -970,6 +970,11 @@ i {
         margin-top: 35px;
     }
 
+    .slider .list .item .box1 .content p {
+        padding: 0;
+        margin: 0;
+    }
+
     .slider .list .item .box1 .content h2,
     .slider .list .item .box2 .content h2 {
         font-size: 25px;
@@ -979,6 +984,7 @@ i {
     .slider .list .item .box1 .content p,
     .slider .list .item .box2 .content p {
         font-size: 0.95em;
+
     }
 
     .arrows {
@@ -1001,7 +1007,7 @@ i {
         background-size: 120%;
     }
 
-    .about .historia p{
+    .about .historia p {
         columns: 1;
     }
 
@@ -1009,7 +1015,7 @@ i {
         max-width: 90%;
     }
 
-    .about .imagens .box-imagens .flavio-e-ana-paula button{
+    .about .imagens .box-imagens .flavio-e-ana-paula button {
         opacity: 1;
     }
 
